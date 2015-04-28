@@ -1,0 +1,5 @@
+module.exports = {
+	endpoint: "API-ENDPOINT-URL",
+	user: "USERNAME",
+	password: "PASSWORD"
+};
