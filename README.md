@@ -6,7 +6,7 @@ JS client for using Melinda API (Union catalogue of the National library of Finl
 ## Installation
 
 ```
-npm install marc-record-merge
+npm install melinda-api-client
 ```
 
 ## Usage
@@ -14,6 +14,8 @@ npm install marc-record-merge
 Usage examples can be found from the test/ directory. Each function returns a promise.
 
 ```
+
+var MelindaClient = require('melinda-api-client');
 
 var client = new MelindaClient(config);
 
