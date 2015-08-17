@@ -25,6 +25,7 @@
     "btoa": "^1.1.2",
     "q": "^1.2.0",
     "sprintf": "^0.1.5",
-    "xmldom": "^0.1.19"
+    "xmldom": "^0.1.19",
+    "marc-record-serializers": "git://github.com/petuomin/marc-record-serializers"
   }
 }
