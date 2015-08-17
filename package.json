@@ -1,6 +1,6 @@
 {
   "name": "melinda-api-client",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "JS client for using Melinda API (Union catalogue of the National library of Finland)",
   "main": "lib/index.js",
   "scripts": {
