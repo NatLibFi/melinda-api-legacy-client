@@ -26,6 +26,6 @@
     "q": "^1.2.0",
     "sprintf": "^0.1.5",
     "xmldom": "^0.1.19",
-    "marc-record-serializers": "git://github.com/petuomin/marc-record-serializers"
+    "marc-record-serializers": "https://github.com/NatLibFi/marc-record-serializers#dep-update"
   }
 }
