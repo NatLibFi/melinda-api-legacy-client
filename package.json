@@ -26,6 +26,6 @@
     "q": "^1.2.0",
     "sprintf": "^0.1.5",
     "xmldom": "^0.1.19",
-    "marc-record-serializers": "https://github.com/NatLibFi/marc-record-serializers#dep-update"
+    "marc-record-serializers": "https://github.com/natlibfi-arlehiko/marc-record-serializers#dep-update"
   }
 }
