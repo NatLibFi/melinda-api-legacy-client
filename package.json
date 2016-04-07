@@ -34,7 +34,7 @@
 	"axios": "^0.5.4",
 	"btoa": "^1.1.2",
 	"q": "^1.2.0",
-	"sprintf": "^0.1.5",
+	"sprintf.js": "^0.1.4",
 	"xmldom": "0.1.19",
 	"marc-record-serializers": "https://github.com/natlibfi-arlehiko/marc-record-serializers#dep-update"
     },
