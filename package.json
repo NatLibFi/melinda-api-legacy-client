@@ -36,7 +36,7 @@
 	"q": "^1.2.0",
 	"sprintf.js": "^0.1.4",
 	"xmldom": "0.1.19",
-	"marc-record-serializers": "https://github.com/natlibfi-arlehiko/marc-record-serializers#dep-update"
+	"marc-record-converters": "https://github.com/natlibfi/marc-record-converters"
     },
     "devDependencies": {
 	"chai": "^2.2.0",
