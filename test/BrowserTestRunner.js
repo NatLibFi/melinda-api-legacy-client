@@ -4,7 +4,7 @@
 *
 * JS client for using Melinda API (Union catalogue of the National library of Finland)
 *
-* Copyright (c) 2015 University Of Helsinki (The National Library Of Finland)
+* Copyright (c) 2015-2017 University Of Helsinki (The National Library Of Finland)
 *
 * This file is part of melinda-api-client
 *
