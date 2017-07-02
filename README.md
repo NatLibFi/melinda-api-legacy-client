@@ -1,4 +1,4 @@
-# melinda-api-client
+# melinda-api-client [![NPM Version](https://img.shields.io/npm/v/@natlibfi/melinda-api-client.svg)](https://npmjs.org/package/melinda-api-client) [![Build Status](https://travis-ci.org/NatLibFi/melinda-api-client.svg)](https://travis-ci.org/NatLibFi/melinda-api-client) [![Test Coverage](https://codeclimate.com/github/NatLibFi/melinda-api-client/badges/coverage.svg)](https://codeclimate.com/github/NatLibFi/melinda-api-client/coverage)
 
 JS client for using Melinda API (Union catalogue of the National library of Finland)
 
