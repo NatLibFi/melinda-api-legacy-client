@@ -1,4 +1,4 @@
-# melinda-api-client [![NPM Version](https://img.shields.io/npm/v/@natlibfi/melinda-api-client.svg)](https://npmjs.org/package/melinda-api-client) [![Build Status](https://travis-ci.org/NatLibFi/melinda-api-client.svg)](https://travis-ci.org/NatLibFi/melinda-api-client) [![Test Coverage](https://codeclimate.com/github/NatLibFi/melinda-api-client/badges/coverage.svg)](https://codeclimate.com/github/NatLibFi/melinda-api-client/coverage)
+# melinda-api-client [![NPM Version](https://img.shields.io/npm/v/@natlibfi/melinda-api-client.svg)](https://npmjs.org/package/@natlibfi/melinda-api-client) [![Build Status](https://travis-ci.org/NatLibFi/melinda-api-client.svg)](https://travis-ci.org/NatLibFi/melinda-api-client) [![Test Coverage](https://codeclimate.com/github/NatLibFi/melinda-api-client/badges/coverage.svg)](https://codeclimate.com/github/NatLibFi/melinda-api-client/coverage)
 
 JS client for using Melinda API (Union catalogue of the National library of Finland)
 
@@ -15,7 +15,7 @@ Usage examples can be found from the test/ directory. Each function returns a pr
 
 ```
 
-var MelindaClient = require('melinda-api-client');
+var MelindaClient = require('@natlibfi/melinda-api-client');
 
 var client = new MelindaClient(config);
 
@@ -81,4 +81,4 @@ The ci will do the same when commits are pushed to this repository.
 
 Copyright (c) 2015-2017 University Of Helsinki (The National Library Of Finland)
 
-This project's source code is licensed under the terms of **GNU General Public License Version 3**.
+This project's source code is licensed under the terms of **GNU Lesser General Public License Version 3**.
