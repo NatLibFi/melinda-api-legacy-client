@@ -28,19 +28,19 @@
 
 require.config({
 	baseUrl: "../",
-    paths: {
-      'backbone': 'node_modules/backbone/backbone',
-      'jquery': 'node_modules/jquery/dist/jquery',
-      'underscore': 'node_modules/underscore/underscore',
-      'chai': 'node_modules/chai/chai',
-
-    }
+	paths: {
+		'backbone': 'node_modules/backbone/backbone',
+		'jquery': 'node_modules/jquery/dist/jquery',
+		'underscore': 'node_modules/underscore/underscore',
+		'chai': 'node_modules/chai/chai',
+		
+	}
 });
 
 
 require([
-//Tests go here
-
+	//Tests go here
+	
 ], function() {
 	"use strict";
 	
@@ -49,5 +49,5 @@ require([
 	} else { 
 		window.mocha.run(); 
 	}
-
+	
 });

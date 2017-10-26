@@ -28,7 +28,8 @@
 			"version": "1.1.4",
 			"main": "lib/index.js",
 			"scripts": {
-						"test": "grunt default"
+						"test": "grunt default",
+						"publish-to-npm": "npm publish --access=public"
 			},
 			"dependencies": {
 						"@natlibfi/marc-record-converters": "^1.0.0",
