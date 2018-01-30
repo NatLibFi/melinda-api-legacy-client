@@ -1,50 +1,51 @@
 {
-    "name": "melinda-api-client",
-    "description": "JS client for using Melinda API (Union catalogue of the National library of Finland)",
-    "author": {
-	"name": "The National Library of Finland"
-    },
-    "keywords": [
-	"melinda",
-	"marc",
-	"record",
-	"bibliography",
-	"bibliographic",
-	"bibliographies",
-	"catalogue",
-	"cataloguing",
-	"library",
-	"libraries"
-    ],
-    "homepage": "https://github.com/NatLibFi/melinda-api-client",
-    "bugs": {
-	"url": "https://github.com/NatLibFi/melinda-api-client/issues"
-    },
-    "repository": {
-	"type": "git",
-	"url": "git@github.com:NatLibFi/melinda-api-client.git"
-    },
-    "license": "GPL-3.0+",
-    "version": "1.1.0",
-    "main": "lib/index.js",
-    "scripts": {
-	"test": "grunt default"
-    },
-    "dependencies": {
-	"axios": "^0.5.4",
-	"btoa": "^1.1.2",
-	"q": "^1.2.0",
-	"sprintf": "^0.1.5",
-	"xmldom": "^0.1.19",
-	"marc-record-serializers": "https://github.com/natlibfi-arlehiko/marc-record-serializers#dep-update"
-    },
-    "devDependencies": {
-	"chai": "^2.2.0",
-	"grunt": "^0.4.5",
-	"grunt-contrib-jshint": "^0.11.2",
-	"grunt-mocha-istanbul": "^2.4.0",
-	"grunt-mocha-test": "^0.12.7",
-	"istanbul": "^0.3.13",
-	"mocha": "^2.2.4"
-    }
+			"name": "melinda-api-client",
+			"description": "JS client for using Melinda API (Union catalogue of the National library of Finland)",
+			"author": {
+						"name": "The National Library of Finland"
+			},
+			"keywords": [
+						"melinda",
+						"marc",
+						"record",
+						"bibliography",
+						"bibliographic",
+						"bibliographies",
+						"catalogue",
+						"cataloguing",
+						"library",
+						"libraries"
+			],
+			"homepage": "https://github.com/NatLibFi/melinda-api-client",
+			"bugs": {
+						"url": "https://github.com/NatLibFi/melinda-api-client/issues"
+			},
+			"repository": {
+						"type": "git",
+						"url": "git@github.com:NatLibFi/melinda-api-client.git"
+			},
+			"license": "GPL-3.0+",
+			"version": "1.1.0",
+			"main": "lib/index.js",
+			"scripts": {
+						"test": "grunt default"
+			},
+			"dependencies": {
+						"axios": "^0.5.4",
+						"btoa": "^1.1.2",
+						"grunt-cli": "^1.2.0",
+						"marc-record-serializers": "^1.4.0",
+						"q": "^1.2.0",
+						"sprintf": "^0.1.5",
+						"xmldom": "^0.1.19"
+			},
+			"devDependencies": {
+						"chai": "^2.2.0",
+						"grunt": "^0.4.5",
+						"grunt-contrib-jshint": "^0.11.2",
+						"grunt-mocha-istanbul": "^2.4.0",
+						"grunt-mocha-test": "^0.12.7",
+						"istanbul": "^0.3.13",
+						"mocha": "^2.2.4"
+			}
 }
