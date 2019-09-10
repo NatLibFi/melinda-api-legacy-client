@@ -32,14 +32,14 @@
 						"publish-to-npm": "npm publish --access=public"
 			},
 			"dependencies": {
-						"@natlibfi/marc-record-converters": "^1.0.0",
+						"@natlibfi/marc-record-serializers": "^4.1.0",
 						"axios": "^0.5.4",
 						"btoa": "^1.1.2",
 						"grunt-cli": "^1.2.0",
 						"q": "^1.2.0",
 						"sprintf.js": "^0.1.4",
-						"xmldom": "0.1.19",
-						"url-join": "^2.0.2"
+						"url-join": "^2.0.2",
+						"xmldom": "0.1.19"
 			},
 			"devDependencies": {
 						"chai": "^2.2.0",
