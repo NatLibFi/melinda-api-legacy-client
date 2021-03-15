@@ -34,10 +34,10 @@ steps:
   #  commands:
   #    - npm run check-coverage
 
-  - name: Build
-    image: node:12
-    commands:
-      - npm run build
+  #- name: Build
+  #  image: node:12
+  #  commands:
+  #    - npm run build
 
   - name: Static-security-scan
     image: quay.io/natlibfi/njsscan
