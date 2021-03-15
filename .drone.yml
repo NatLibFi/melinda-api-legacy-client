@@ -42,7 +42,7 @@ steps:
   - name: Static-security-scan
     image: quay.io/natlibfi/njsscan
     commands:
-      - njsscan dist
+      - njsscan lib
 
   - name: npm
     image: plugins/npm
