@@ -24,10 +24,10 @@ steps:
       # Cannot be true because of node-sass
       NPM_CONFIG_IGNORE_SCRIPTS: true
 
-  - name: Test
-    image: node:12
-    commands:
-      - npm test
+  #- name: Test
+  #  image: node:12
+  #  commands:
+  #    - npm test
 
   #- name: check-coverage
   #  image: node:12
