@@ -26,6 +26,8 @@
 *
 **/
 
+const {MarcRecord} = require('@natlibfi/marc-record');
+
 /*jshint mocha:true*/
 
 (function(root, testrunner) {
@@ -37,7 +39,7 @@
       require('./config'),
       require('chai'), 
       require('../lib/index'),
-      require('marc-record-js'));  // jshint ignore:line
+      require('@natlibfi/marc-record'));  // jshint ignore:line
     } 
   }(this, function(config, chai, MelindaClient, Record) {
     "use strict";
@@ -61,9 +63,9 @@
         
         var client = new MelindaClient(config);
         
-        client.loadRecord(30000).then(function(record) {
-          
-          expect(record).to.be.an.instanceof(Record); 
+        client.loadRecord("000503874").then(function(record) {
+
+          expect(record).to.be.an.instanceof(MarcRecord); 
           
           done();
         }).catch(function(error) {
@@ -83,9 +85,11 @@
           if (error.name == "AssertionError") {
             throw error;
           }
-          
-          expect(error.status_code).to.equal(404);
-          expect(error.message).to.equal('Not Found');
+          //console.log("code: "+error.response.status);
+          //console.log("message: "+error.response.statusText);
+
+          expect(error.response.status).to.equal(404);
+          expect(error.response.statusText).to.equal('Not Found');
           done();
         }).done();
         
@@ -95,28 +99,30 @@
         this.timeout(7000);
         var client = new MelindaClient(config);
         
-        client.loadRecord(30001).then(function(record) {
+        client.loadRecord("016525548").then(function(record) {
           
-          expect(record).to.be.an.instanceof(Record);
+          // console.log(record.constructor.name)
+          expect(record).to.be.an.instanceof(MarcRecord);
           
           //remove old test lines
           record.fields = record.fields.filter(function(field) {
             return !(field.tag == "599" && field.subfields.map(toValues).indexOf("TEST") > -1);
           });
-          
+
           //create new test lines
           var now = new Date();
           record.insertField( ["599",'','','a','TEST','c', now.toString()] );
-          record.insertField( ["599",'','','a','TEST <TAG>'] );
+          // record.insertField( ["599",'','','a','TEST <TAG>'] );
           
           client.updateRecord(record).then(function(response) {
             
-            expect(response.messages.map(to('message'))).to.contain('Document: 000030001 was updated successfully.');
+            // console.log(response);
+            expect(response.messages.map(to('message'))).to.contain('Document: 016525548 was updated successfully.');
             expect(response.messages.map(to('code'))).to.contain('0018');
             
             
             //validate that the update was ok
-            client.loadRecord(30001).then(function(record) {
+            client.loadRecord("016525548").then(function(record) {
               
               var testChange = record.fields.filter(function(field) {
                 return (field.tag == "599" && field.subfields.map(toValues).indexOf("TEST") > -1);
@@ -141,11 +147,14 @@
         this.timeout(7000);
         var client = new MelindaClient(config);
         
-        client.loadRecord(30001).then(function(record) {
+        //console.log("Reading record");
+        client.loadRecord("016525548").then(function(record) {
           
+          console.log("Creating record");
           client.createRecord(record).then(function(response) {
-            
-            expect(response.recordId).to.not.equal(30001);
+            console.log("Done.");
+            // console.log(response);
+            expect(response.recordId).to.not.equal("016525548");
             console.log(response.recordId);
             done();
           }).catch(function(e) {
@@ -160,13 +169,13 @@
       
       it('should retrieve child records', function(done) {
         
-        this.timeout(5000);
+        this.timeout(15000);
         
         var client = new MelindaClient(config);
         
-        client.loadChildRecords('foo').then(function(records) {
-          
-          expect(records).to.be.an('array');
+        client.loadChildRecords('014722671').then(function(records) {
+          console.log(`Received records: ${records.length}`);
+          expect(records.length).to.equal(13);
           
           done();
         }).catch(function(error) {
