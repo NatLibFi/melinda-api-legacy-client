@@ -36,7 +36,7 @@
 			},
 			"dependencies": {
 						"@natlibfi/marc-record-serializers": "^4.1.0",
-						"axios": "^0.21.1",
+						"axios": "^1.6.0",
 						"btoa": "^1.1.2",
 						"grunt-cli": "^1.2.0",
 						"q": "^1.2.0",
